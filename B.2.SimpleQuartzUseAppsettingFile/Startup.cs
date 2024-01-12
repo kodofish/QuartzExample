@@ -1,10 +1,6 @@
 ﻿using Common;
-using Microsoft.AspNetCore.Mvc;
 using Quartz;
-using Quartz.Impl.Calendar;
-using Quartz.Impl.Matchers;
 using Quartz.Logging;
-using System.Globalization;
 
 namespace AgileSlot.GameServer
 {

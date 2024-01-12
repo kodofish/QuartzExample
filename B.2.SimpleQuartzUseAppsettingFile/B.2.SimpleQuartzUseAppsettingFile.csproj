@@ -4,7 +4,8 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <RootNamespace>B._2.SimpleQuartzUseAppsettingFile</RootNamespace>
+        <RootNamespace>B._2.SimpleQuartzUseAppSettingFile</RootNamespace>
+        <AssemblyName>B.2.SimpleQuartzUseAppSettingFile</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

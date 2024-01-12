@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using B._2.SimpleQuartzUseAppsettingFile.Models;
+using B._2.SimpleQuartzUseAppSettingFile.Models;
 
-namespace B._2.SimpleQuartzUseAppsettingFile.Controllers;
+namespace B._2.SimpleQuartzUseAppSettingFile.Controllers;
 
 public class HomeController : Controller
 {
@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        _logger.Log(LogLevel.Information, "Home/Index");
         return View();
     }
 

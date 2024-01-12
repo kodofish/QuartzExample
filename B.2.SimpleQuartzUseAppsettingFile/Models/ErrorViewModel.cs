@@ -1,4 +1,4 @@
-namespace B._2.SimpleQuartzUseAppsettingFile.Models;
+namespace B._2.SimpleQuartzUseAppSettingFile.Models;
 
 public class ErrorViewModel
 {
