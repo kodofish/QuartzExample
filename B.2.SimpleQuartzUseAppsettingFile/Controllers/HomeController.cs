@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
+using B._2.SimpleQuartzUseAppSettingFile.Models;
 using Microsoft.AspNetCore.Mvc;
-using B._2.SimpleQuartzUseAppsettingFile.Models;
 using Common;
 using Microsoft.EntityFrameworkCore;
 
