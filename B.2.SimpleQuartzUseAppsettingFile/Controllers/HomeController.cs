@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using B._2.SimpleQuartzUseAppSettingFile.Models;
+using B._2.SimpleQuartzUseAppsettingFile.Models;
+using Common;
+using Microsoft.EntityFrameworkCore;
 
 namespace B._2.SimpleQuartzUseAppSettingFile.Controllers;
 
@@ -28,5 +30,15 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    public IActionResult Start(string id)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest();
+        
+        using var db = new MyDbContext();
+        db.Database.ExecuteSqlRawAsync("Select * from dbo.Users Where user = '" + id + "';");
+        return Ok();
     }
 }
